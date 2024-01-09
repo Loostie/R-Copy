@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>R_Copy</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Copyright>Loostie Development</Copyright>
+    <PackageIcon>ld.ico</PackageIcon>
+	  <UseWindowsForms>true</UseWindowsForms>
+	  <ApplicationIcon>ld.ico</ApplicationIcon>
+	  <FileVersion>1.5.0.0</FileVersion>
+	  <PackageProjectUrl>https://github.com/Loostie/R-Copy</PackageProjectUrl>
+	  <Title>R-Copy</Title>
+	  <Description>A very simple Robocopy GUI</Description>
+	  <PackageTags>Robocopy, copying, backup</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="r-copy.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ld.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="r-copy.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ld.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
